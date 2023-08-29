@@ -1,0 +1,18 @@
+[package]
+name = "rsess"
+version = "0.1.0"
+authors = ["Frederik <uoogk@student.kit.edu>"]
+edition = "2021"
+description = "Implementation of the enumerative sphere shaping algorithm for probabilistic constellation shaping."
+readme = "README.md"
+license = "GPL-3.0"
+keywords = ["communications", "probabilistic-shaping", "ess", "oess"]
+categories = ["science", "simulation"]
+exclude = ["pyrsess"]
+documentation = "https://docs.rs/rsess"
+repository = "https://github.com/kit-cel/rsess"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rug = "1.18.0"
