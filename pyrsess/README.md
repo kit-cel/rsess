@@ -8,6 +8,8 @@ The bindings are created using [PyO3](https://github.com/PyO3/pyo3).
 
 ## Installation
 
+There may currently be some issues installing PyRSESS on Windows as RSESS uses GMP which can not easily be built on Windows.
+
 ### Using PIP
 
 Type `pip install pyrsess` into your favorite command line.
@@ -31,4 +33,3 @@ TLDR: `pip install maturin; maturin develop`
 
 - `src/lib.rs`: PyO3 Rust to python bindings
 - `pyess.pyi`: Python function type hints
-- `ESS test.ipynb`: A simple Jupyter notebook with some usage examples

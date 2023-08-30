@@ -3,11 +3,11 @@ name = "pyrsess"
 version = "0.1.0"
 edition = "2021"
 exclude = ["bin/", "include/", "lib/", "lib64", "share/", "pyvenv.cfg"]
-authors = ["Frederik <uoogk@student.kit.edu>"]
+authors = ["Frederik Ritter <uoogk@student.kit.edu>", "Andrej Rode <rode@kit.edu>", "Laurent Schmalen <laurent.schmalen@kit.edu>"]
 description = "Implementation of the enumerative sphere shaping algorithm for probabilistic constellation shaping."
 readme = "README.md"
 license = "GPL-3.0"
-keywords = ["communications", "probabilistic-shaping", "ess", "oess"]
+keywords = ["communications", "probabilistic", "shaping", "ess", "oess"]
 repository = "https://github.com/kit-cel/rsess"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
