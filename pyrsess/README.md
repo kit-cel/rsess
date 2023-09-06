@@ -5,6 +5,7 @@ The bindings are created using [PyO3](https://github.com/PyO3/pyo3).
 
 - [Documentation](link to docs)
 - [Source](https://github.com/kit-cel/rsess)
+- [Examples](https://github.com/kit-cel/rsess_examples)
 
 ## Installation
 

@@ -6,6 +6,7 @@ For ease of use it also contains the subproject `pyrsess` which provides Python 
 - [Documentation](https://docs.rs/rsess/)
 - [Source](https://github.com/kit-cel/rsess/tree/main)
 - [PyRSESS](https://github.com/kit-cel/rsess/tree/main/pyrsess)
+- [Examples](https://github.com/kit-cel/rsess_examples)
 
 ## Installation
 
