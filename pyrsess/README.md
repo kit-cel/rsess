@@ -3,7 +3,7 @@
 Python bindings for the ESS and OESS algorithms implemented in Rust.
 The bindings are created using [PyO3](https://github.com/PyO3/pyo3).
 
-- [Documentation](link to docs)
+- [Documentation](https://kit-cel.github.io/rsess/pyrsess.html)
 - [Source](https://github.com/kit-cel/rsess)
 - [Examples](https://github.com/kit-cel/rsess_examples)
 
