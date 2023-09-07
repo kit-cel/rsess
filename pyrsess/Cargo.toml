@@ -17,7 +17,7 @@ crate-type = ["cdylib"]
 
 [dependencies]
 pyo3 = { version = "0.17.3", features = ["extension-module", "multiple-pymethods"] }
-rsess = { path = "../" }
+rsess = "0.1.0"
 numpy = "0.17.2"
 ndarray = "0.15.1"
 rug = "1.18.0"
