@@ -1,6 +1,6 @@
 [package]
 name = "pyrsess"
-version = "0.1.0.post1"
+version = "0.1.0"
 edition = "2021"
 exclude = ["bin/", "include/", "lib/", "lib64", "share/", "pyvenv.cfg"]
 authors = ["Frederik Ritter <uoogk@student.kit.edu>", "Andrej Rode <rode@kit.edu>", "Laurent Schmalen <laurent.schmalen@kit.edu>"]
