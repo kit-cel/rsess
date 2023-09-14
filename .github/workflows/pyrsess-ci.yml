@@ -1,0 +1,51 @@
+name: PyRSESS CI
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - v*
+  pull_request:
+
+jobs:
+  linux:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: PyO3/maturin-action@v1
+        with:
+          manylinux: auto
+          command: build
+          args: --release --sdist -o dist --find-interpreter
+          working-directory: ./pyrsess
+
+  windows:
+    runs-on: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: git diffutils make m4 mingw-w64-x86_64-rust mingw-w64-x86_64-gcc mingw-w64-x86_64-python-maturin
+      - uses: actions/checkout@v3
+      - name: Run maturin
+        run: |
+          maturin build --release -o dist --find-interpreter
+        working-directory: ./pyrsess
+
+  macos:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: PyO3/maturin-action@v1
+        with:
+          command: build
+          args: --release -o dist --find-interpreter
+          working-directory: ./pyrsess

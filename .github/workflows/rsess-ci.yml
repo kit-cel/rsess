@@ -1,0 +1,49 @@
+name: RSESS CI
+
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches:
+      - '*'
+    tags-ignore:
+      - v*
+  pull_request:
+
+jobs:
+  matrix:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Run cargo build
+        run: |
+          cargo build --release --all-features
+      - name: Run cargo test
+        run: |
+          cargo test --release --all-features
+
+  windows:
+    runs-on: windows-latest
+    name: windows-latest
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: actions/checkout@v3
+      - uses: msys2/setup-msys2@v2
+        with:
+          msystem: MINGW64
+          update: true
+          install: git diffutils make m4 mingw-w64-x86_64-rust mingw-w64-x86_64-gcc
+      - uses: actions/checkout@v3
+      - name: Run cargo build
+        run: |
+          cargo build --release --all-features
+      - name: Run cargo test
+        run: |
+          cargo test --release --all-features

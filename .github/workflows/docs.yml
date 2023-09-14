@@ -3,7 +3,7 @@
 name: prsess-docs
 
 on:
-  workflow_dispatch:
+  workflow_call:
 
 # security: restrict permissions for CI jobs.
 permissions:
