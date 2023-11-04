@@ -50,3 +50,19 @@ Some test are located in `src/tests.rs`, these can be run with `cargo test`.
 * File `src/tests.rs`
 	* Defines tests for the remaining code
 	* Roughly divided into three sections: Trellis, ESS and OESS
+
+## Citing this work
+
+If you use this library in your research you can reference the following publication.
+
+Frederik Ritter, Andrej Rode, and Laurent Schmalen. "Introducing RSESS: An open source enumerative sphere shaping implementation coded in Rust." Proceedings of the GNU Radio Conference. Vol. 8. No. 1. 2023.
+```
+@inproceedings{ritter2023introducing,
+  title={Introducing RSESS: An open source enumerative sphere shaping implementation coded in Rust},
+  author={Ritter, Frederik and Rode, Andrej and Schmalen, Laurent},
+  booktitle={Proceedings of the GNU Radio Conference},
+  volume={8},
+  number={1},
+  year={2023}
+}
+```
