@@ -66,3 +66,6 @@ Frederik Ritter, Andrej Rode, and Laurent Schmalen. "Introducing RSESS: An open 
   year={2023}
 }
 ```
+
+## Acknowledgments
+This  work  has  received  funding  from  the  European  Re-search Council (ERC) under the European Union's Horizon2020 research and innovation programme (grant agreement No. 101001899).
